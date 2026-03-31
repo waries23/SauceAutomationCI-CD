@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-30T13:27:28 IST" name="Suite" finished-at="2026-03-30T13:27:46 IST" duration-ms="18091">
+    <groups>
+      <group name="endtoend">
+        <method signature="Sauce_page.EndToEnd(java.util.HashMap)[pri:0, instance:Selenium_sauce_project.Sauce_website.Sauce_page@3eb7fc54]" name="EndToEnd" class="Selenium_sauce_project.Sauce_website.Sauce_page"/>
+        <method signature="TestCase2.BrokenLinksCheck()[pri:0, instance:Selenium_sauce_project.Sauce_website.TestCase2@35ef1869]" name="BrokenLinksCheck" class="Selenium_sauce_project.Sauce_website.TestCase2"/>
+      </group> <!-- endtoend -->
+    </groups>
+    <test started-at="2026-03-30T13:27:28 IST" name="brokenLinks" finished-at="2026-03-30T13:27:36 IST" duration-ms="7853">
+      <class name="Selenium_sauce_project.Sauce_website.TestCase2">
+        <test-method is-config="true" signature="initialiseApp()[pri:0, instance:Selenium_sauce_project.Sauce_website.TestCase2@35ef1869]" started-at="2026-03-30T13:27:28 IST" name="initialiseApp" finished-at="2026-03-30T13:27:33 IST" duration-ms="4815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseApp -->
+        <test-method signature="BrokenLinksCheck()[pri:0, instance:Selenium_sauce_project.Sauce_website.TestCase2@35ef1869]" started-at="2026-03-30T13:27:33 IST" name="BrokenLinksCheck" finished-at="2026-03-30T13:27:36 IST" duration-ms="2809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrokenLinksCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium_sauce_project.Sauce_website.TestCase2@35ef1869]" started-at="2026-03-30T13:27:36 IST" name="tearDown" finished-at="2026-03-30T13:27:36 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium_sauce_project.Sauce_website.TestCase2 -->
+    </test> <!-- brokenLinks -->
+    <test started-at="2026-03-30T13:27:28 IST" name="EndToEnd" finished-at="2026-03-30T13:27:46 IST" duration-ms="18091">
+      <class name="Selenium_sauce_project.Sauce_website.Sauce_page">
+        <test-method is-config="true" signature="initialiseApp()[pri:0, instance:Selenium_sauce_project.Sauce_website.Sauce_page@3eb7fc54]" started-at="2026-03-30T13:27:29 IST" name="initialiseApp" finished-at="2026-03-30T13:27:33 IST" duration-ms="4373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseApp -->
+        <test-method signature="EndToEnd(java.util.HashMap)[pri:0, instance:Selenium_sauce_project.Sauce_website.Sauce_page@3eb7fc54]" started-at="2026-03-30T13:27:33 IST" name="EndToEnd" data-provider="getJsonData" finished-at="2026-03-30T13:27:46 IST" duration-ms="13051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{size=L, color=Blue, productName=Noir jacket}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndToEnd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium_sauce_project.Sauce_website.Sauce_page@3eb7fc54]" started-at="2026-03-30T13:27:46 IST" name="tearDown" finished-at="2026-03-30T13:27:46 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium_sauce_project.Sauce_website.Sauce_page -->
+    </test> <!-- EndToEnd -->
+  </suite> <!-- Suite -->
+</testng-results>

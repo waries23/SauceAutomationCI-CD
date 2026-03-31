@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Selenium_sauce_project.Sauce_website.TestListeners"/>
+</listeners>
+  <test thread-count="5" name="EndToEnd"> 
+    <classes>
+      <class name="Selenium_sauce_project.Sauce_website.Sauce_page"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="brokenLinks">
+      <classes>
+      <class name="Selenium_sauce_project.Sauce_website.TestCase2"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

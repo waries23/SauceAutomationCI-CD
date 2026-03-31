@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">EndToEnd</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,297</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">brokenLinks</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,230</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">37,527</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EndToEnd &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Selenium_sauce_project.Sauce_website.Sauce_page</td><td><a href="#m0">EndToEnd</a></td><td rowspan="1">1774808299231</td><td rowspan="1">13822</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">brokenLinks &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Selenium_sauce_project.Sauce_website.TestCase2</td><td><a href="#m1">SigninTest</a></td><td rowspan="1">1774808320553</td><td rowspan="1">12971</td></tr><tr><th colspan="4">brokenLinks &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Selenium_sauce_project.Sauce_website.TestCase2</td><td><a href="#m2">BrokenLinksCheck</a></td><td rowspan="1">1774808315398</td><td rowspan="1">3299</td></tr></tbody>
+</table>
+<h2>EndToEnd</h2><h3 id="m0">Selenium_sauce_project.Sauce_website.Sauce_page#EndToEnd</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{size=L, color=Blue, productName=Noir jacket}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>brokenLinks</h2><h3 id="m1">Selenium_sauce_project.Sauce_website.TestCase2#SigninTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: .customer_name, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.customer_name&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\warie\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62881}, goog:processID: 17820, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62881/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ab33f63897d7997260ca213fd7d8afd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at Common_class.Extending_methods.visibilityOfElementLocated(Extending_methods.java:59)
+	at Selenium_sauce_project.Sauce_website.Home_page.loginTest(Home_page.java:97)
+	at Selenium_sauce_project.Sauce_website.TestCase2.SigninTest(TestCase2.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Selenium_sauce_project.Sauce_website.TestCase2#BrokenLinksCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
