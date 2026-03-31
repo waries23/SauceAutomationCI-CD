@@ -3,6 +3,7 @@ package Selenium_sauce_project.Sauce_website;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

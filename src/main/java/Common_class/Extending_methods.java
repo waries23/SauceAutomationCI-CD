@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -31,8 +32,9 @@ public class Extending_methods {
 	
 	
 public void brokenLinksCheck(List<WebElement> links) throws MalformedURLException, IOException, URISyntaxException {
-		
+	List<Integer> codes=new ArrayList<>();
 		for(WebElement link:links) {
+			
 			String url=link.getAttribute("href");
 			HttpURLConnection con=(HttpURLConnection)new URI(url).toURL().openConnection();
 			con.setRequestMethod("HEAD");
@@ -42,7 +44,10 @@ public void brokenLinksCheck(List<WebElement> links) throws MalformedURLExceptio
 			soft.assertTrue(responseCode<400, "The url "+ url +" is broken");
 			else
 				System.out.println("The url "+url+" has response code of "+responseCode+" is broken");
+			
 		}
+	
+		
 	}
 
 public void visibilityOfAllElementsLocated(By waitId) {
