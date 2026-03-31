@@ -35,9 +35,7 @@ public class Sauce_page extends BaseTest_Sauce{
 	public void EndToEnd(HashMap<String,String> data) throws MalformedURLException, IOException, URISyntaxException, InterruptedException  {
 
 		
-		/*String wanted="Noir jacket";
-		String size="L";
-		String color="Blue";*/
+
 		long num=478654346572l;
 		int mmyy=1030;
 		int cvv=451;
