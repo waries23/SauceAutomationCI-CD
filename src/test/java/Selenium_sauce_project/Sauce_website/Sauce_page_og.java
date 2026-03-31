@@ -32,7 +32,7 @@ public class Sauce_page_og extends BaseTest_Sauce{
 	@Test
 	public void EndToEnd() throws MalformedURLException, IOException, URISyntaxException, InterruptedException  {
 		
-		ABC;
+		
 		/*WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		Extending_methods methods=new Extending_methods(driver);
